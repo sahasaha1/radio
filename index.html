@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>САНЯ САЙТ</title>
+    <style>
+        body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000000; /* Чистый черный фон */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        color: white; /* Весь текст станет белым */
+    }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+        }
+         .icon-card {
+        background: #1a1a1a; /* Темно-серые карточки, чтобы выделялись на черном */
+        border: 1px solid #333; /* Тонкая рамка */
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .icon-card:hover {
+        transform: translateY(-10px);
+        background: #252525; /* Подсветка при наведении */
+        border-color: #555;
+    }
+        .icon-card img {
+            width: 200px;
+            height:200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            background: #eee; /* Цвет заглушки */
+        }
+         .icon-card span {
+        color: #ffffff; /* Белые надписи */
+        font-weight: 600;
+        font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Иконка 1 -->
+    <a href="https://radioplayer.ua/play/kiss-fm/" class="icon-card">
+        <img src="kissfm.png" alt="мое фото">
+        <span>KISS FM</span>
+    </a>
+
+    <!-- Иконка 2 -->
+    <a href="http://p.onlineradiobox.com/ua/zakarpattya/player/?cs=ua.zakarpattya&played=1" class="icon-card">
+        <img src="zakarpattya.png" мое фото">
+        <span>ЗАКАРПАТТЯ ФМ</span>
+    </a>
+
+    <!-- Иконка 3 -->
+    <a href="https://play.tavr.media/hitfm/" class="icon-card">
+        <img src="xit fm.png" alt="мое фото">
+        <span>ХИТ ФМ</span>
+    </a>
+
+    <!-- Иконка 4 -->
+    <a href="https://play.tavr.media/radioroks/ballads/" class="icon-card">
+        <img src="radioroks.png" alt="мое фото">
+        <span>ROKS BALLADY</span>
+    </a>
+</div>
+
+</body>
+</html>
